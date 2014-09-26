@@ -1,4 +1,4 @@
-
+#include <SDL.h>
 class CGame
 {
 public:
@@ -16,5 +16,7 @@ public:
 		ESTADO_FINALIZANDO
 	};
 private:
+	void iniciando();
+	SDL_Surface*Screen;
 	Estado estado;
 };
