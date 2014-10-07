@@ -6,6 +6,7 @@
 
 CGame::CGame(){
 	estado = ESTADO_INICIADO;
+	////ACT3: Mal, esta seccion no debe de ir aqui, si no en un metodo llamado iniciando, que sta controlado por el estado ESTADO_INICIADO
 	if(SDL_Init(SDL_INIT_VIDEO)){
 		printf("Error %s ",SDL_GetError());
 		exit(EXIT_FAILURE);
@@ -16,6 +17,7 @@ CGame::CGame(){
 		exit(EXIT_FAILURE);
 	}
 	SDL_WM_SetCaption("Mi primer Jueguini",NULL);
+	/////ACT3:Hasta aqui esta mal
 	atexit(SDL_Quit);
 }
 
