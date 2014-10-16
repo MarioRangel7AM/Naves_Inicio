@@ -6,7 +6,27 @@
 #include <SDL_image.h>
 
 CGame::CGame(){
+<<<<<<< HEAD
 	estado = ESTADO_INICIANDO;
+=======
+<<<<<<< HEAD
+	estado = ESTADO_INICIANDO;
+=======
+	estado = ESTADO_INICIADO;
+	////ACT3: Mal, esta seccion no debe de ir aqui, si no en un metodo llamado iniciando, que sta controlado por el estado ESTADO_INICIADO
+	if(SDL_Init(SDL_INIT_VIDEO)){
+		printf("Error %s ",SDL_GetError());
+		exit(EXIT_FAILURE);
+	}
+	Screen = SDL_SetVideoMode( 640, 480, 24, SDL_SWSURFACE);
+	if(Screen == NULL){
+		printf("Error!!%s ",SDL_GetError());
+		exit(EXIT_FAILURE);
+	}
+	SDL_WM_SetCaption("Mi primer Jueguini",NULL);
+	/////ACT3:Hasta aqui esta mal
+>>>>>>> origin/master
+>>>>>>> origin/master
 	atexit(SDL_Quit);
 }
 
@@ -31,7 +51,11 @@ void CGame::Iniciando()
 		exit(EXIT_FAILURE);
 	}
 
+<<<<<<< HEAD
 	SDL_WM_SetCaption("Mi primer Jueguini", NULL);
+=======
+	SDL_WM_SetCaption("Mi primer Juego", NULL);
+>>>>>>> origin/master
 	atexit(SDL_Quit);
 	nave1 = new nave(screen,"../Data/Minave.bmp");
 	
