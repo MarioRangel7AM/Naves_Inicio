@@ -1,6 +1,7 @@
 #include "nave.h"
 #include "Config.h"
 
+<<<<<<< HEAD
 nave::nave(SDL_Surface * screen, char * rutaImagen,int x, int y){
 	sprite1 = new sprite(screen);
 	sprite1->CargarImagen(rutaImagen);
@@ -20,6 +21,13 @@ void nave::actualizar()
 	{
 		Mover(1);
 	}
+=======
+nave::nave(SDL_Surface * screen, char * rutaImagen){
+	sprite1 = new sprite(screen);
+	sprite1->CargarImagen(rutaImagen);
+	x = (WIDTH_SCREEN/2)-(sprite1->WidthModule(0)/2);
+	y= (HEIGHT_SCREEN-80)-(sprite1->HeightModule(0));
+>>>>>>> origin/master
 }
 
 void nave::Pintar(){

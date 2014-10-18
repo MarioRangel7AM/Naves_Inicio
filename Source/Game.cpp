@@ -31,6 +31,7 @@ void CGame::Iniciando()
 		exit(EXIT_FAILURE);
 	}
 
+<<<<<<< HEAD
 	SDL_WM_SetCaption("Mi primer Jueguini", NULL);
 	atexit(SDL_Quit);
 	nave1 = new nave(screen,"../Data/Minave.bmp",(WIDTH_SCREEN/2),(HEIGHT_SCREEN-80));
@@ -39,13 +40,29 @@ void CGame::Iniciando()
 }
 bool CGame::Start()
 {
+=======
+	SDL_WM_SetCaption("Mi primer Juego", NULL);
+
+	atexit(SDL_Quit);
+	nave1 = new nave(screen,"../Data/Minave.bmp");
+	
+}
+bool CGame::Start()
+{
+	
+>>>>>>> origin/master
 	int salirJuego = false;
           int cosa = 0;
 	while (salirJuego == false){
+<<<<<<< HEAD
+=======
+            
+>>>>>>> origin/master
 		
 		switch(estado){
 		case Estado::ESTADO_INICIANDO:
 			Iniciando();
+<<<<<<< HEAD
 			printf("\n1.ESTADO_INICIANDO");
 			estado = Estado::ESTADO_MENU;
 			break;
@@ -89,6 +106,33 @@ bool CGame::Start()
 		case Estado::ESTADO_FINALIZANDO:
 			printf("\n5.ESTADO_FINALIZANDO");
 			getchar();
+=======
+			estado = Estado::ESTADO_MENU;
+			break;
+		case Estado::ESTADO_MENU:
+			SDL_FillRect(screen, NULL, SDL_MapRGB(screen->format,0,0,0));
+
+			keys = SDL_GetKeyState(NULL);
+			if(keys[SDLK_RIGHT]){
+				nave1->Mover(1);
+				
+			}
+			if (keys[SDLK_LEFT]){
+			nave1->Mover(-1);
+			}
+			nave1->Pintar();
+			
+			break;
+		case Estado::ESTADO_JUGANDO:	
+			break;
+		case Estado::ESTADO_TERMINANDO: 
+				salirJuego = true;
+				break;
+		case Estado::ESTADO_FINALIZANDO:
+			delete(nave1);
+			SDL_FreeSurface(screen);
+			SDL_Quit();
+>>>>>>> origin/master
 			break;
 		};
 

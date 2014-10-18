@@ -7,6 +7,7 @@ class nave{
 	sprite *sprite1;
 	int x;
 	int y;
+<<<<<<< HEAD
 	bool automovimiento;
 	
 public:
@@ -15,6 +16,13 @@ public:
 			void Pintar();
 			void SetAutoMovimiento(bool automovimiento);
 			void actualizar();
+=======
+	
+public:
+		void Mover(int posicion);
+			nave(SDL_Surface * screen, char * rutaImagen);
+			void Pintar();
+>>>>>>> origin/master
 		
 };
 
