@@ -1,22 +1,29 @@
-#include <SDL.h>
+#include <SDL.h>;
+#include "nave.h"
 class CGame
 {
 public:
 	bool Start();
 	static CGame instanceGame;
-
-	CGame();
-	void Finalize();
-
 	enum Estado{
-		ESTADO_INICIADO,
+		ESTADO_INICIANDO,
 		ESTADO_MENU,
 		ESTADO_JUGANDO,
 		ESTADO_TERMINANDO,
 		ESTADO_FINALIZANDO
 	};
+
+	CGame();
+	void Finalize();
+
 private:
-	void iniciando();
-	SDL_Surface*Screen;
+
+	void Iniciando();
+
+	Uint8 *keys;
+    SDL_Event  event;
+	SDL_Surface *screen;
+	nave *nave1;
+	nave *enemigo;
 	Estado estado;
 };
