@@ -19,6 +19,7 @@ public:
 private:
 
 	void Iniciando();
+<<<<<<< HEAD
 	void Menu();
 	void MoverEnemigo();
 	bool EsLimitePantalla(nave * objeto,int bandera);
@@ -39,5 +40,16 @@ private:
 	int tick;
 	int tiempoFrame;
 	int tiempoFrameFinal;
+=======
+
+	Uint8 *keys;
+    SDL_Event  event;
+	SDL_Surface *screen;
+	nave *nave1;
+<<<<<<< HEAD
+	nave *enemigo;
+=======
+>>>>>>> origin/master
+>>>>>>> origin/master
 	Estado estado;
 };

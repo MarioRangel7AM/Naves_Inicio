@@ -14,7 +14,11 @@ sprite::~sprite(){
 
 void sprite::CargarImagen(char * nombre){
 	imagen = SDL_LoadBMP(nombre);
+<<<<<<< HEAD
 	SDL_SetColorKey(imagen, SDL_SRCCOLORKEY |SDL_RLEACCEL, SDL_MapRGB(imagen->format,255,0,255));
+=======
+
+>>>>>>> origin/master
 }
 void sprite::PintarModulo(int nombre, int x, int y, int w, int h){
 		
