@@ -1,12 +1,6 @@
 #include "Game.h"
 #include  <stdlib.h>
 
-<<<<<<< HEAD
-=======
-
-int main(int argc, char *argv[]){
-	CGame *navesGame = new CGame();
->>>>>>> origin/master
 
 int main(int argc, char *argv[]){
 	CGame *navesGame = new CGame();

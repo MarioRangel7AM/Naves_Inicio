@@ -8,11 +8,7 @@ public:
 		int id, x, y, w, h;
 	};
 
-<<<<<<< HEAD
 	Modulos modulos [9]; // numero de modulos
-=======
-	Modulos modulos [1];
->>>>>>> origin/master
 	spritedef(); 
 
 };

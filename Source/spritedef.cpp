@@ -1,8 +1,5 @@
 #include "spritedef.h"
-<<<<<<< HEAD
 #include "config.h"
-=======
->>>>>>> origin/master
 
 
     spritedef::spritedef(){
@@ -11,7 +8,6 @@
 	modulos[0].y = 0;
 	modulos[0].w = 64;
 	modulos[0].h = 64;
-<<<<<<< HEAD
 
 	modulos[1].id = 1;
 	modulos[1].x = 0;
@@ -60,6 +56,4 @@
 	modulos[8].y = 194;
 	modulos[8].w = 91;
 	modulos[8].h = 30;
-=======
->>>>>>> origin/master
 }

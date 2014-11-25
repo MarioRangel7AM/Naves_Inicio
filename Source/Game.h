@@ -1,4 +1,5 @@
 #include <SDL.h>;
+#include "objeto.h"
 #include "nave.h"
 class CGame
 {
@@ -19,37 +20,26 @@ public:
 private:
 
 	void Iniciando();
-<<<<<<< HEAD
 	void Menu();
 	void MoverEnemigo();
-	bool EsLimitePantalla(nave * objeto,int bandera);
+	bool EsLimitePantalla(objeto * objeto,int bandera);
 	int OpcionSeleccionada;
 	Uint8 *keys;
     SDL_Event  event;
 	SDL_Surface *screen,*imagena;
-	nave *fondo1; // super fondo
-	nave *titulo; // fondo del menu
-	nave *menuT;
+	objeto *fondo1; // super fondo
+	objeto *titulo; // fondo del menu
+	objeto *menuT;
+	
 	//nave *menuN;
 	//nave *menuI1; //Iniciar1
 	//nave *menuI2; //iniciar2
 	//nave* menuS1; //salir1
 	//nave* menuS2; //salir2
-	nave *nave1;
-	nave *enemigoArreglo [10];
+	Nave * nave1;
+	objeto *enemigoArreglo [10];
 	int tick;
 	int tiempoFrame;
 	int tiempoFrameFinal;
-=======
-
-	Uint8 *keys;
-    SDL_Event  event;
-	SDL_Surface *screen;
-	nave *nave1;
-<<<<<<< HEAD
-	nave *enemigo;
-=======
->>>>>>> origin/master
->>>>>>> origin/master
 	Estado estado;
 };

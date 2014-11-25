@@ -4,7 +4,6 @@
 #define WIDTH_SCREEN 640
 #define HEIGHT_SCREEN 480
 
-<<<<<<< HEAD
 #define FPS_LIMIT 30.0f
 #define FPS_DELAY 1000.0f / FPS_LIMIT
 
@@ -27,6 +26,4 @@
 #define MODULO_MENU_SALIR2     8
 
 
-=======
->>>>>>> origin/master
 #endif
