@@ -8,7 +8,7 @@ public:
 		int id, x, y, w, h;
 	};
 
-	Modulos modulos [9]; // numero de modulos
+	Modulos modulos [10]; // numero de modulos
 	spritedef(); 
 
 };

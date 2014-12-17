@@ -1,6 +1,8 @@
 #include <SDL.h>;
 #include "objeto.h"
 #include "nave.h"
+#include "Stage.h"
+
 class CGame
 {
 public:
@@ -9,6 +11,7 @@ public:
 	enum Estado{
 		ESTADO_INICIANDO,
 		ESTADO_MENU,
+		ESTADO_PRE_JUGANDO,
 		ESTADO_JUGANDO,
 		ESTADO_TERMINANDO,
 		ESTADO_FINALIZANDO
@@ -37,9 +40,16 @@ private:
 	//nave* menuS1; //salir1
 	//nave* menuS2; //salir2
 	Nave * nave1;
-	objeto *enemigoArreglo [10];
+	Nave *enemigoArreglo [10];
+
+	stage nivel[4];
+	void inicializandoStage();
+	int nivelActual;
+
 	int tick;
 	int tiempoFrame;
 	int tiempoFrameFinal;
 	Estado estado;
+	int vida;
+	int enemigosEliminados;
 };

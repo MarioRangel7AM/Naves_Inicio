@@ -24,6 +24,11 @@
 #define MODULO_MENU_SALIR1     6
 #define MODULO_MENU_INICIO2    7
 #define MODULO_MENU_SALIR2     8
+#define MODULO_BALAS_BALA      9
 
+#define MAXIMO_DE_BALAS  20
+
+#define NAVE_PROPIA       0
+#define NAVE_ENEMIGO      1
 
 #endif
